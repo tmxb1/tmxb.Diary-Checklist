@@ -1,0 +1,32 @@
+<view class="container" style="background: url(../source/壁纸.jpg);"><view class="login-icon"></view>
+ <view class="login-from"> 
+ <!--账号--> 
+ <view class="inputView"> 
+ <label class="loginLab">用户名</label> 
+ <input value="{{name}}" class="inputText" placeholder="请输入用户名" bindinput="phoneInput" /> 
+ </view> 
+ <view class="line"></view> 
+ <!--密码--> 
+ <view class="inputView"> 
+ <label class="loginLab">密码</label> 
+ <input value="{{pass}}" class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" /> 
+ </view> 
+ <!--账户类型-->
+ <view class="page-section">
+      <radio-group bindchange="radioChange">
+        账户类型：
+        <label class="section">
+            <label   wx:for="{{items}}" wx:key="{{item.value}}">
+                <radio value="{{item.value}}"  checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </label>
+      </radio-group>
+  </view>
+<view ></view>
+<navigator class="register" url="/pages/register/index" >注册</navigator>
+ <!--按钮--> 
+ <view class="loginBtnView"> 
+ <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button> 
+ </view> 
+ </view> 
+</view> 

@@ -1,0 +1,43 @@
+<view class="view_contain">
+  <!-- 第一部分 -->
+  <view class="view_1">
+    <view class="view_image_text">
+      <image class="image_radius" src="../source/图像.png" />
+      <text>{{name}}</text>
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="view_3">
+    <view class="line"></view>
+    <view bindtap="name" class="list-item">
+      <image class="item-image" src="../source/更改名称.png"></image>
+      <text class="item-text">更改名称</text>
+    </view>
+    <view class="line"></view>
+    <view bindtap="pass" class="list-item">
+      <image class="item-image" src="../source/更改密码.png"></image>
+      <text class="item-text">更改密码</text> 
+    </view>
+
+    <view class="line"></view>
+    <view bindtap="del" class="list-item">
+      <image class="item-image" src="../source/注销.png"></image>
+      <text class="item-text">注销</text>  
+    </view>
+    <view class="line"></view>
+    <view class="list-item" bindtap="exit">
+      <image class="item-image" src="../source/退出_logout.png"></image>
+      <text class="item-text">退出</text>
+    </view>
+    <view class="ko"></view>
+      <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{lunboData}}">
+          <swiper-item>
+            <image src="{{item.imgurl}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+
+
+  </view>
+</view>

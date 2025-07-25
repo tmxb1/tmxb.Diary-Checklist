@@ -1,0 +1,25 @@
+<view class="view_contain">
+  <view class="view_1">
+    <view class="view_image_text">
+      <image class="image_radius" src="../source/图像.png" />
+      <text>{{name}}</text>
+    </view>
+  </view>
+  <view class="view_3">
+    <view class="line"></view>
+    <view bindtap="name" class="list-item">
+      <image class="item-image" src="../source/更改名称.png"></image>
+      <text class="item-text">更改名称</text>
+    </view>
+    <view class="line"></view>
+    <view bindtap="pass" class="list-item">
+      <image class="item-image" src="../source/更改密码.png"></image>
+      <text class="item-text">更改密码</text> 
+    </view>
+    <view class="line"></view>
+    <view class="list-item" bindtap="exit">
+      <image class="item-image" src="../source/退出_logout.png"></image>
+      <text class="item-text">退出</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/note-content/index.wxss */
+.input{
+    margin: 2px;
+    /* background-color: turquoise; */
+    min-height: 408px;
+    border: 1px solid gray;
+    border-radius: 15rpx;
+    background-color: wheat;
+    margin-top: 5px;
+}
+.title{
+    display: flex;
+    margin-top: 5px;
+    font-size: 22px;
+}
+.title-input{
+    margin-left: 10px;
+    min-height: 35px;
+    margin-top: -2px;
+}
+.button{
+    margin: 5px;
+}
+.contetn{
+    margin: 5px;
+}

@@ -1,0 +1,55 @@
+{
+    "pages": [
+       
+        
+         "pages/Login/index",
+        "pages/inventory/index",
+        
+        "pages/adm-manage/administrators",
+        "pages/note/logs",
+        
+        "pages/my/login",
+        
+        "pages/note-content/index",
+        "pages/adm-my/adm-my",
+        "pages/register/index",
+        "pages/adm_inventory/index",
+        "pages/adm_note/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "笔记清单",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#d81e06",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/inventory/index",
+                "text": "清单",
+                "iconPath": "pages/source/列表.png",
+                "selectedIconPath": "pages/source/列表1.png"
+            },
+            {
+                "pagePath": "pages/note/logs",
+                "text": "笔记",
+                "iconPath": "pages/source/笔记.png",
+                "selectedIconPath": "pages/source/笔记1.png"
+            },
+            {
+                "pagePath": "pages/my/login",
+                "text": "我的",
+                "iconPath": "pages/source/我的.png",
+                "selectedIconPath": "pages/source/我的1.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "component": true,
+    "usingComponents": {}
+}

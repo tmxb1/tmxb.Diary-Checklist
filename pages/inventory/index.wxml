@@ -1,0 +1,18 @@
+<checkbox-group>
+<view wx:for="{{xq}}">
+    <view class="father">
+        <label style="max-width: 75%;" class="content">{{index+1}}. {{item.content}}</label>
+        <button class="delete" data-index='{{item.content}}' bindtap="del" type="warn" size="mini">删除</button>
+    </view>
+    <label class="tiem">{{item.time}}</label>
+    <view class="hr"></view>
+</view>
+</checkbox-group>
+
+<view>
+  <button class="mine-nouserinfo-avatar" bindtap="search" open-type="getUserInfo" size="mini"><image class="btnImg" src="/pages/source/搜索.png"><navigator url="/pages/note-content/index"></navigator></image></button>
+</view>
+<view class="butter">
+    <input class="input" type="text" value="{{input}}" bindinput="input" ></input>
+    <button class="inp-but" type="primary" bindtap="add" size="mini">添加</button>
+</view>

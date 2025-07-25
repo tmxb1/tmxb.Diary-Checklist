@@ -1,0 +1,12 @@
+<!--pages/note-content/index.wxml-->
+<view>
+    <view class="title">
+        标题:<input bindinput="title" class="title-input"/>
+    </view>
+    <view class="input">
+        <textarea maxlength="-1" class="contetn" bindinput="input" auto-height placeholder="内容" />
+    </view>
+    <view>
+    <button bindtap="button" class="button">保存</button>
+    </view>
+</view>

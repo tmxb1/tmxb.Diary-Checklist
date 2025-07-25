@@ -1,0 +1,62 @@
+.home{
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* background-color: violet; */
+  margin: 5px;
+  }
+  .one{
+    background-color: wheat;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 45%;
+    border: 1px solid gray;
+    border-radius: 15rpx;
+    /* box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15); */
+  }
+  .time{
+    font-size: 10px;
+    margin-left: 40px;
+  }
+  .title{
+    font-size:20px;
+    font-weight:700;
+    margin-left: 5px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    /* background-color:black; */
+  }
+  .content{
+    margin-left: 5px;
+    overflow-wrap: break-word;
+    /* background-color: blue; */
+    height: 110px;
+    max-height: 110px;
+    /* background-color: teal; */
+  }
+  
+  
+  
+  .mine-nouserinfo-avatar {
+    background-color:transparent;
+    position: fixed;
+    top: 80%;
+    left: 70%;
+    display:flex;
+    /* background-color: white; */
+  }
+  .mine-nouserinfo-avatar::after {
+    border: none; 
+  }
+  .btnImg {
+    width: 150rpx;
+    height: 150rpx;
+  }
+  button::after{  
+    border: none; 
+  }
+  button { 
+    margin-top: 20px;
+    border-radius: 30px;
+  }

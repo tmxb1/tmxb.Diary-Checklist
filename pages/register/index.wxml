@@ -1,0 +1,23 @@
+<view class="container" style="background: url(../source/壁纸.jpg);"><view class="login-icon"> </view>
+ <view class="login-from"> 
+ <!--账号--> 
+ <view class="inputView"> 
+ <label class="loginLab">用户名</label> 
+ <input type="text" value="{{name1}}" class="inputText" placeholder="请输入用户名" bindinput="phoneInput" /> 
+ </view> 
+ <view class="line"></view> 
+ <!--密码--> 
+ <view class="inputView"> 
+ <label class="loginLab">密码</label> 
+ <input  type="text"  class="inputText"  placeholder="请输入密码" bindinput="passwordInput" /> 
+ </view> 
+ <view class="line"></view> 
+<view >
+</view>
+<navigator class="register" url="/pages/Login/index" >登录</navigator>
+ <!--按钮--> 
+ <view class="loginBtnView"> 
+ <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="register">注册</button> 
+ </view> 
+ </view> 
+</view> 

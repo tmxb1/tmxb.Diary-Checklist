@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+
+<view class="home" >
+    <view class="one" wx:for="{{data}}">
+      <view class="title">{{item.title}}</view>
+      <view class="content"><text space="ensp">  {{item.content}}</text></view>
+      <view class="time">{{item.time}}</view>
+    </view>
+</view>
+
+<!-- 添加按钮图标 -->
+<view>
+  <button class="mine-nouserinfo-avatar2" bindtap="search" open-type="getUserInfo" size="mini"><image class="btnImg" src="/pages/source/搜索.png"><navigator url="/pages/note-content/index"></navigator></image></button>
+  <button class="mine-nouserinfo-avatar" bindtap="add" open-type="getUserInfo" size="mini"><image class="btnImg" src="/pages/source/add.png"><navigator url="/pages/note-content/index"></navigator></image></button>
+</view>
+
+

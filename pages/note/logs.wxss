@@ -1,0 +1,43 @@
+.home{
+display: flex;flex-flow: row wrap;justify-content: space-between;
+margin: 5px;
+}
+.one{
+  background-color: wheat;margin-top: 10px; margin-left: 5px;
+  margin-right: 5px;width: 45%;border: 1px solid gray;
+  border-radius: 15rpx;
+}
+.time{
+  font-size: 10px;margin-left: 40px;
+}
+.title{
+  font-size:20px;font-weight:700;margin-left: 5px;
+  max-width: 100%;text-overflow: ellipsis;
+}
+.content{
+  margin-left: 5px;overflow-wrap: break-word;height: 110px;
+  max-height: 110px;
+}
+.mine-nouserinfo-avatar2 {
+  background-color:transparent;position: fixed;top: 84%;
+  left: 62%;display:flex;
+}
+.mine-nouserinfo-avatar2::after {
+  border: none; 
+}
+.mine-nouserinfo-avatar {
+  background-color:transparent;position: fixed;top: 84%;
+  left: 78%;display:flex;
+}
+.mine-nouserinfo-avatar::after {
+  border: none; 
+}
+.btnImg {
+  width: 120rpx;height: 120rpx;
+}
+button::after{  
+  border: none; 
+}
+button { 
+  margin-top: 20px;border-radius: 30px;
+}

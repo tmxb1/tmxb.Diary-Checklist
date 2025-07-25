@@ -1,0 +1,51 @@
+.father{
+    margin: 5px;display:flex;height: 35px;
+}
+.time{
+    font-size: 12px;padding-top: 8px;height: 10px;
+}
+.delete{
+    top: -20px;height: 25px;
+}
+.content{
+    width: 100px;
+}
+.lb1{
+    width: 45%;margin-top: 5px;
+}
+.lb2{
+    width: 25%; margin: 2px;
+}
+.lb3{
+    width: 25%;margin: 2px;
+}
+.lb{
+    margin-top: 5px;
+}
+.hr {
+    width: 90%; height: 3rpx;margin-left: 37.5rpx;
+    background-color: #dfdedd;
+}
+.mine-nouserinfo-avatar2 {
+    background-color:transparent;position: fixed;top: 85%;
+    display:flex;
+}
+.mine-nouserinfo-avatar2::after {
+    border: none; 
+}
+.mine-nouserinfo-avatar {
+    background-color:transparent;position: fixed;top: 85%;
+    left: 75%;display:flex;
+  }
+.mine-nouserinfo-avatar::after {
+    border: none; 
+}
+.btnImg {
+    width: 120rpx;height: 120rpx;
+}
+button::after{  
+    border: none; 
+}
+button { 
+    margin-top: 20px;border-radius: 30px;
+}

@@ -1,0 +1,24 @@
+<view wx:for="{{xq}}" class="lb">
+    <view >
+        <view class="father">
+            <text  	space="ensp" class="lb1">{{index+1}}. 用户名：{{item.name}} </text>
+            <button class="lb2" data-index='{{item.name}}' style="font-size:35rpx !important;width: 80px;" bindtap="inventory" type="primary" size="mini">清单管理</button>
+            <button class="lb3" data-index='{{item.name}}' style="font-size:30rpx !important; width: 80px;" bindtap="note" type="primary" size="mini">笔记管理</button>
+        </view>
+        <view class="father">
+            <text  	space="ensp" class="lb1">  密码：{{item.password}}</text>
+            <button class="lb2" data-index='{{item.name}}' style="font-size:35rpx !important;width: 80px;" bindtap="pass" type="default" size="mini">更改密码</button>
+            <button class="lb3" data-index='{{item.name}}' style="font-size:35rpx !important;width: 80px;" bindtap="name" type="default" size="mini">更改名称</button>
+        </view>
+        
+    </view>
+    <view class="father">
+        <label  class="time">创建时间：{{item.time}}</label>
+        <button class="delete" style="font-size:38rpx !important;width: 100px;" data-index='{{item.name}}' bindtap="del" type="warn" size="mini">删除账户</button>
+    </view>
+    <view class="hr"></view>
+</view>
+<view>
+    <button class="mine-nouserinfo-avatar2" bindtap="search" open-type="getUserInfo" size="mini"><image class="btnImg" src="/pages/source/搜索2.png"><navigator url="/pages/note-content/index"></navigator></image></button>
+  <button class="mine-nouserinfo-avatar" bindtap="my"  open-type="getUserInfo" size="mini"><image class="btnImg" src="/pages/source/gly_my.png"></image></button>
+</view>
