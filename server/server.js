@@ -135,7 +135,6 @@ app.post('/add_note',function(request,response){
 	})
 })
 
-
 //删除笔记( 内容和名字  note)
 app.post('/del_note',function(request,response){
 	var name=request.body.del_note_name;//获取用户名
